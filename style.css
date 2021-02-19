@@ -50,9 +50,11 @@ footer {
 }
 
 .photoimpar,
-.photopar,
-.photowrapper {
+.photopar {
 	height: 5vh;
+}
+.photowrapper {
+	height: fit-content;
 }
 
 .photoimpar {
@@ -67,9 +69,22 @@ footer {
 .B,
 .C {
 	place-content: center;
-	height: 35vh;
+	flex-grow: 1;
+	height: auto;
 }
 
 .right-wrapper {
-	max-height: 80vh;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	max-height: 85vh;
+	align-items: stretch;
+}
+
+.row.row-lg-10.col-md-12 {
+	height: 100%;
+}
+
+#maincontentAB {
+	height: auto;
 }
